@@ -17,7 +17,7 @@ function App() {
   }=useUserCrud() //ejecuto la funcion y me devuelve un objeto que destructuro 
 
   useEffect(() => {
-    getAllUsers
+    getAllUsers ()
   }, [])
   
  
@@ -25,9 +25,12 @@ function App() {
   
       <div>
        <h1>Users Hernan</h1>
+       
         <FormUser // le paso a FormUser las props que va a necesitar dentro de el 
           createNewUser={createNewUser} 
-          updateInfo={updateInfo} 
+          updateInfo={updateInfo} // este es el estado con la info a actualizar
+          updateUserById={updateUserById} //ojo que esta es la funcion de actualizacion
+
         /> 
 
           <div>
