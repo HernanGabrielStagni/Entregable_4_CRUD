@@ -3,22 +3,22 @@ import { useForm } from 'react-hook-form'
 import defaultValues from '../utils/defaultValues'
 
 
-const FormUser = ({createNewUser,updateInfo,updateUserById}) => {
+const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo}) => {
 
     const{register,handleSubmit,reset}=useForm() //destructuro lo que me trae el hook
    
     /*todo lo que registramos en los input lo esta enviandpo a submit*/
     const submit = (data ) =>{ 
-        createNewUser(data) 
-        reset(defaultValues)
+        
         if(updateInfo){
              //actualizo. necesito id y la info. 
              updateUserById(updateInfo.id,data)// va data porque es lo nuevo que esta en el formulario, en cambio en el estado esta lo viejo
-             
+             setUpdateInfo()
         }else{
-
+          createNewUser(data)
         }
-        
+      
+        reset(defaultValues)
     }
 
     useEffect(() => {

@@ -30,6 +30,7 @@ function App() {
           createNewUser={createNewUser} 
           updateInfo={updateInfo} // este es el estado con la info a actualizar
           updateUserById={updateUserById} //ojo que esta es la funcion de actualizacion
+          setUpdateInfo={setUpdateInfo}
 
         /> 
 
