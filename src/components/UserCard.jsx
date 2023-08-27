@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './styles/userCard.css'
 const UserCard = ({user,deleteUserById,setUpdateInfo}) => {
 
     const handleDelete = () =>{
@@ -12,16 +12,22 @@ const UserCard = ({user,deleteUserById,setUpdateInfo}) => {
     }
 
   return ( 
-    <article>
-    <h2>{user.first_name} {user.last_name}</h2> 
-    <ul>
-        <li><span>Email</span><span>{user.email}</span></li>
-        <li><span>Birthday</span><span>{user.birthday}</span></li>
+    <article className='user'>
+    <h2 className='user__name'>{user.first_name} {user.last_name}</h2> 
+    <ul className='user__list'>
+        <li className='user__item'>
+          <span className='user__label' >Email: </span>
+          <span className='user__value'>{user.email}</span>
+        </li>
+        <li className='user__item'>
+          <span className='user__label'>Birthday: </span>
+          <span className='user__value'>{user.birthday}</span>
+        </li>
     </ul>   
 
-    <footer>
-        <button onClick={handleDelete}><i className='bx bx-trash'></i></button>
-        <button onClick={handleUpdate}><i className='bx bx-edit'></i></button>
+    <footer className='user_footer'>
+        <button className='user__btn user__delete' onClick={handleDelete}><i className='bx bx-trash user__icon'></i></button>
+        <button className='user__btn user__update user__icon' onClick={handleUpdate}><i className='bx bx-edit'></i></button>
     </footer>
     </article>
   )

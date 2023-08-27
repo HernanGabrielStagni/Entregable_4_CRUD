@@ -1,0 +1,37 @@
+.app{
+padding: 2em 1.5em;
+}
+
+.app__header{
+    background-color: rgb(148, 120, 154);
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: space-between;
+    border-radius: .5em;
+    }
+    
+.app__title{
+font-weight: 600;
+color: red;
+margin-left: 1em;
+}
+
+.app__btn{
+background-color: rgb(190, 128, 34);
+color: white;
+padding: .5em 1.5em;
+border-radius: .5em;
+transition: transform 200ms ease;
+}
+
+.app__btn:hover{
+    box-shadow: 0 0 .3 #0005;
+    filter: brightness(1.05);
+}
+.app__user-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1.5em;
+}
+

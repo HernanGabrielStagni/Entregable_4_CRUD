@@ -7,6 +7,7 @@
     padding: 1.5em 1em; 
 }
 
+
 .user__name{/*nombre y apellido*/
 font-weight: 5000;
 background-color: red;
@@ -56,11 +57,14 @@ width: 2.5en;
 aspect-ratio: 1;
 border-radius: .4em;
 transition: transform 200ms ease;
-
 }
-.user__btn:hover{
+
+.user__btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 .3}
+    box-shadow: 0 0 .3 #0005;
+    filter: brightness(1.1);
+}
+
 
 .user__delete{
 color: white;
@@ -69,7 +73,7 @@ background-color: #D93F3F;
 
 
 .user__update{
-color: #aaa7;
+color: rgba(3, 3, 3, 0.71);
 border: .05em solid currentColor; 
 }
 

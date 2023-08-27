@@ -8,7 +8,8 @@ import FormUser from './components/FormUser'
 
 function App() {
  const [updateInfo, setUpdateInfo] = useState()
-  const { //destructuro para tenerlas disponibles en este nivel y pasarlas como props
+ const [formClose, setFormClose] = useState(true) 
+ const { //destructuro para tenerlas disponibles en este nivel y pasarlas como props
   users,
   getAllUsers,
   createNewUser,
@@ -19,22 +20,27 @@ function App() {
   useEffect(() => {
     getAllUsers ()
   }, [])
-  
- 
+  const handleOpenForm = () =>{
+    setFormClose(false )
+  }
   return (
   
-      <div>
-       <h1>Users Hernan</h1>
-       
+      <div className='app'>
+      <header className='app__header'>
+          <h1 className='app__title'>Users Hernan</h1>
+          <button onClick={handleOpenForm} className='app__btn'>Create New User</button>
+      </header>
         <FormUser // le paso a FormUser las props que va a necesitar dentro de el 
           createNewUser={createNewUser} 
           updateInfo={updateInfo} // este es el estado con la info a actualizar
           updateUserById={updateUserById} //ojo que esta es la funcion de actualizacion
           setUpdateInfo={setUpdateInfo}
+          setFormClose={setFormClose}
+          formClose={formClose}
 
         /> 
 
-          <div>
+           <div className='app__user-container'>{/*//este div envuelve a todas las */}
             {
               users?.map((user) => (
                 <UserCard 
