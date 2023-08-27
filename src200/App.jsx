@@ -28,7 +28,10 @@ function App() {
       <div className='app'>
       <header className='app__header'>
           <h1 className='app__title'>Users</h1>
-          <button onClick={handleOpenForm} className='app__btn'>Create New User</button>
+          <button onClick={handleOpenForm} className='app__btn'>
+            <img src="/public/icons/plus 1.svg" alt="" />
+            <h2>➕_  New User</h2>
+          </button>
       </header>
         <FormUser // le paso a FormUser las props que va a necesitar dentro de el 
           createNewUser={createNewUser} 

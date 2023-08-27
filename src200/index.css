@@ -1,0 +1,31 @@
+/***** RESET *****/
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300;1,700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: rgb(169, 162, 160);
+  font-family: 'Merriweather', serif;
+  height: 100vh;
+}
+h1,h2,h3,h4,p,ul{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+input{
+  border:1px solid rgb(143, 146, 146);
+ outline:30px;
+font-family: inherit; /*ya que no hereda de forma predeterminada*/
+background-color: rgb(220, 216, 211);
+}
+
+button{
+border: none; /*saca el borde a los botones*/
+font-family: inherit;
+}

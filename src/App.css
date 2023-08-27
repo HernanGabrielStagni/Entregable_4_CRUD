@@ -1,37 +1,90 @@
 .app{
-padding: 2em 1.5em;
-}
-
-.app__header{
-    background-color: rgb(148, 120, 154);
+    /*contenedor general*/
+    background-color: rgb(185, 183, 186);
+    padding: 2em 1.3em;
+    max-width: 1024px;
     display: flex;
-    margin-bottom: 1em;
-    justify-content: space-between;
-    border-radius: .5em;
+    flex-direction: column;
+    margin: auto;
+    gap: 1em;
+    }
+
+    /*contenedor Users Hernan + boton crear usuario*/
+    .app__header{
+        background-color: rgba(248, 246, 248, 0.481);
+        display: flex;
+      /* margin: 0; */
+      padding: .5em;
+        justify-content: space-between;
+        border-radius: .5em;
+    
+        }
+        
+       /*titulo Users Hernan*/ 
+    .app__title{
+    color:#0b1cb1;
+    /* background-color: red; */
+    font-family: Helvetica Neue;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 .5rem;
+    border-radius: .5em 0 0 .5em;
     }
     
-.app__title{
-font-weight: 600;
-color: red;
-margin-left: 1em;
+    /*button de creation*/
+    .app__btn{
+    background-color: #223389;
+    color: white;
+    padding: .5em .5em;
+    gap: .5em;
+    border-radius: .5em .5em .5em .5em;
+    transition: transform 200ms ease;
+    display: flex;
+    padding-top: .8em;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #0005;
+    }
+    
+    .app__btn:hover{
+        background-color: rgb(86, 70, 177);
+        box-shadow:  0 .3 #0005;
+        filter: brightness(1.05);
+    }
+/*contenedor de todas las tarjetas*/
+    .app__user-container{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin: auto;
+    }
+    
+  
+
+/* Cuando el ancho de la pantalla sea menor o igual a 450px, fondo rojo */
+@media (min-width: 351px) and (max-width: 450px) {
+    .app__user-container {
+        /* background-color: red; */
+        max-width: 300px;
+       
+    }
 }
 
-.app__btn{
-background-color: rgb(190, 128, 34);
-color: white;
-padding: .5em 1.5em;
-border-radius: .5em;
-transition: transform 200ms ease;
+/* Cuando el ancho de la pantalla esté entre 451px y 550px, fondo verde */
+@media (min-width: 451px) and (max-width: 550px) {
+    .app__user-container {
+        /* background-color: green; */
+        max-width: 350px;
+
+    }
 }
 
-.app__btn:hover{
-    box-shadow: 0 0 .3 #0005;
-    filter: brightness(1.05);
-}
-.app__user-container{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 1.5em;
-}
-
+/* Cuando el ancho de la pantalla esté entre 551px y 650px, fondo amarillo */
+/* @media (min-width: 551px) and (max-width: 650px) {
+    .app__user-container {
+        background-color: yellow;
+    }
+} */

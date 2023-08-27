@@ -16,7 +16,6 @@ const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo,setForm
              setUpdateInfo()
         }else{
           createNewUser(data)
-          setFormClose(true )
         }
       
         reset(defaultValues)
@@ -39,12 +38,12 @@ const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo,setForm
    
    <form className='form' onSubmit={handleSubmit(submit)}>
       
-       <h3 className='form__title'>{ updateInfo ?'Update User Information' :'Create New User'}</h3>
+       <h3 className='form__title'>{ updateInfo ?'Update User Information' :' ➕ Create New User'}</h3>
        <span onClick={handleClose} className='form__exit'>✖</span>
       
       <div className='form__item'>
         <label className='form__label' htmlFor="email">Email</label>
-        <input className='form__input' {...register('email')} type="email" id="email" required/>
+        <input className='form__input' {...register('email')} type="email" id="email" required />
       </div>
 
       <div className='form__item'>
