@@ -22,12 +22,13 @@ const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo,setForm
            setFormClose(true )
         }
       
-        reset(defaultValues)
+       
     }
   
    
    const handleClose = () =>{
     setFormClose(true)
+     reset(defaultValues)
    }
 
 
@@ -35,9 +36,7 @@ const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo,setForm
       reset(updateInfo) 
     }, [updateInfo])
     
-    useEffect(() => {
-      reset(updateInfo) 
-    }, [updateInfo])
+  
 
 
   return (
