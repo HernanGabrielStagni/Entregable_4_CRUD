@@ -15,7 +15,6 @@ const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo,setForm
             //  setFormClose(false ) 
              updateUserById(updateInfo.id,data)// va data porque es lo nuevo que esta en el formulario, en cambio en el estado esta lo viejo
              setUpdateInfo()
-             reset(defaultValues)
              setFormClose(true )
         }else{
            createNewUser(data)
