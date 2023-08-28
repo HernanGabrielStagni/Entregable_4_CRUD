@@ -1,0 +1,94 @@
+.user {  /*contenedor de las cards*/
+    border: 0.05em solid rgba(8, 8, 8, 0.989);
+   
+    background-color: rgb(163, 159, 159);
+    min-width: 250px;
+    border-radius: 0.4em;
+    padding: 1em 1em; 
+    width:18em; 
+    height: 10.5em;
+    box-shadow: 2px 2px 2px 2px rgb(107, 100, 100);
+
+  
+}
+
+
+.user__name{/*nombre y apellido*/
+font-weight: 5000;
+color: #04046a;
+/* background-color: red; */
+font-size: 1.1rem;
+/* margin-bottom: 1em; */
+}
+
+
+ /*.user__list{ contenedor ul*/
+/* display: grid; */
+/* gap: 0.5em; */
+/* margin-bottom: 1em; }*/
+
+
+.user__item{ /*contenedor li de los span*/
+display: flex;
+flex-direction: column;
+/* gap: .5em; */
+color: #302F2F
+}
+
+
+.user__label{  /*etiqueta span nombre del atributo Ej. email* */
+font-size: .7rem;
+letter-spacing: 1px;
+color: #f7f3f3;
+text-transform: uppercase;
+margin-top: 1em;
+}
+
+
+.user__value{/*etiqueta span atributp Ej. hernan@gmail.com*/
+ font-size: .8rem;
+ position: relative;
+ /* left: 1.5em; */
+}
+
+
+.user_footer{
+display: flex;
+justify-content: end;
+gap: 1em;
+
+}
+
+
+.user__btn{
+width: 2.5en;
+aspect-ratio: 1;
+border-radius: .4em;
+transition: transform 200ms ease;
+}
+
+.user__btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 .3em #0005;
+    filter: brightness(1.1);
+}
+
+
+.user__delete{
+color: white;
+background-color: #D93F3F;
+cursor: pointer;
+box-shadow: 1px 1px 1px 1px #0005;
+}
+
+
+.user__update{
+color: rgba(3, 3, 3, 0.71);
+border: .05em solid currentColor; 
+cursor: pointer;
+box-shadow: 1px 1px 1px 1px #0005;
+}
+
+.user__icon{
+font-size: 1.2rem;    
+}

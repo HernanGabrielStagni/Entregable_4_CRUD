@@ -1,7 +1,6 @@
 import React from 'react'
 import './styles/userCard.css'
-
-const UserCard = ({user,deleteUserById,setUpdateInfo,setFormClose}) => {
+const UserCard = ({user,deleteUserById,setUpdateInfo}) => {
 
     const handleDelete = () =>{
           deleteUserById(user.id) //le asigno el id del elemento actual que entra como props
@@ -9,8 +8,7 @@ const UserCard = ({user,deleteUserById,setUpdateInfo,setFormClose}) => {
   
     const handleUpdate = () =>{
         setFormClose(false )
-        setUpdateInfo(user)
-        console.log("estoy actualizando")
+        setUpdateInfo(user.id)
 
     }
 

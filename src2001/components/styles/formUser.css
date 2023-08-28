@@ -1,0 +1,103 @@
+
+
+
+.form__container{
+background-color: rgba(187, 149, 111, 0.505);
+position:fixed;
+width: 100%;
+height: 100vh;
+backdrop-filter:sepia(60%);
+backdrop-filter:blur(2px);
+
+color: #000;
+z-index: 1;
+top: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+transform: transform 150ms ease;
+
+}
+
+.close{
+transform: scale(0);
+}
+
+
+.form{
+    background-color: white;
+width: 100%;
+max-width: 320px;
+padding: 1.5em;
+border-radius: .5em;
+display: flex;
+flex-direction: column;
+gap: 1em;
+position: relative;
+
+}
+
+.form__title{
+font-weight: .7rem;
+font-size: 1.1rem;
+}
+
+.form__exit{
+position: absolute;
+right: 1.4em;
+top:1em;
+cursor: pointer;
+background-color: rgba(198, 195, 195, 0.523);
+width: 1.5em;
+animation-play-state: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+
+
+}
+
+
+
+.form__exit:hover{
+    background-color:crimson;
+    color: white;
+    font-weight: 400;
+    
+    }
+
+.form__item{
+display: flex;
+flex-direction: column;
+gap: .3em;
+}
+
+.form__label{
+font-size: .7rem;
+padding: .6em;
+}
+
+
+.form__input{
+padding: .3em .8em;
+font-size: .7rem;
+font-weight: 300;
+}
+
+
+.form__btn{
+padding: .5em 1em;
+background-color: #5d69d7;
+border-radius: .5em;
+margin-top: 1em;
+cursor: pointer;
+}
+
+.form__btn:hover{
+background-color: rgb(47, 13, 128); 
+   
+     transform: scale(1.05);
+     color: white;
+    }

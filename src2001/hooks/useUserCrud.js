@@ -31,11 +31,11 @@ const useUserCrud = () =>{
 
 
     //UPDATE
-    const updateUserById = (id,data) =>{
+    const updateUserById = (id, data) => {
          
-       const urlUpdate=`${url}${id}/`
-         axios.patch(urlUpdate,data) //ubica el usuario y lo actualiza 
-            .then(res =>{ getAllUsers()}) // .then( () => getAllUsers()) ...se puede hacer asi tambien ya que res no lo usamos
+       const urlUpdate= `${url}${id}/`
+         axios.patch(urlUpdate, data) //ubica el usuario y lo actualiza 
+            .then(() => getAllUsers()) // .then( () => getAllUsers()) ...se puede hacer asi tambien ya que res no lo usamos
             .catch(err => console.log (err)) //en cambio aqui el err si nos sirve para guardar el error
 
     }

@@ -27,7 +27,7 @@ function App() {
   
       <div className='app'>
       <header className='app__header'>
-          <h1 className='app__title'>Users Hernan</h1>
+          <h1 className='app__title'>Users</h1>
           <button onClick={handleOpenForm} className='app__btn'>Create New User</button>
       </header>
         <FormUser // le paso a FormUser las props que va a necesitar dentro de el 
@@ -48,7 +48,7 @@ function App() {
                 user={user}
                 deleteUserById={deleteUserById}
                 setUpdateInfo={setUpdateInfo} //le mando setUpdateInfo a UserCard para que capture la informacion del usuario al que se le esta dando cik para actualizar.
-                setFormClose={setFormClose}
+
                 />
                 
               ))

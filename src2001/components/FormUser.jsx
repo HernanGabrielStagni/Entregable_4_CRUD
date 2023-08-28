@@ -11,15 +11,12 @@ const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo,setForm
     const submit = (data ) =>{ 
         
         if(updateInfo){
-             //actualizo. necesito id y la info.
-            //  setFormClose(false ) 
+             //actualizo. necesito id y la info. 
              updateUserById(updateInfo.id,data)// va data porque es lo nuevo que esta en el formulario, en cambio en el estado esta lo viejo
              setUpdateInfo()
-             reset(defaultValues)
-             setFormClose(true )
         }else{
-           createNewUser(data)
-           setFormClose(true )
+          createNewUser(data)
+          setFormClose(true )
         }
       
         reset(defaultValues)
@@ -27,7 +24,7 @@ const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo,setForm
   
    
    const handleClose = () =>{
-    setFormClose(true)
+   setFormClose(true)
    }
 
 
@@ -35,9 +32,6 @@ const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo,setForm
       reset(updateInfo) 
     }, [updateInfo])
     
-    useEffect(() => {
-      reset(updateInfo) 
-    }, [updateInfo])
 
 
   return (
