@@ -16,6 +16,7 @@
 .user__name{/*nombre y apellido*/
 font-weight: 5000;
 color: #04046a;
+text-shadow: 1.5px 1.5px 1.5px rgb(112, 110, 110);
 /* background-color: red; */
 font-size: 1.1rem;
 /* margin-bottom: 1em; */
