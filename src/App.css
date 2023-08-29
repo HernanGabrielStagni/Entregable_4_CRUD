@@ -19,7 +19,8 @@
         }
         
     .app__title{
-    color:#555A88;
+    color:#202da9;
+    text-shadow: 2px 2px 2px white;
     /* background-color: red; */
     font-family: Helvetica Neue;
     font-size: 2rem;
@@ -35,6 +36,7 @@
     
     background-color: #555A88;
     color: white;
+    text-shadow: 1px 1px 1px white;
     padding: .5em .5em;
     gap: .5em;
     border-radius: .5em .5em .5em .5em;

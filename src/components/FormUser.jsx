@@ -21,21 +21,23 @@ const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo,setForm
            setFormClose(true )
         }
       
-       
+        reset(defaultValues)
     }
   
    
    const handleClose = () =>{
     setFormClose(true)
-     reset(defaultValues)
+    setUpdateInfo(false)
    }
 
 
     useEffect(() => {
-      reset(updateInfo) 
+      updateInfo
+      ?reset(updateInfo)
+      :reset(defaultValues) 
     }, [updateInfo])
     
-  
+   
 
 
   return (
@@ -71,7 +73,7 @@ const FormUser = ({createNewUser,updateInfo,updateUserById,setUpdateInfo,setForm
         <input className='form__input' {...register('birthday')} type="date" id="birthday" required/>
       </div>
 
-      <button className='form__btn'>{updateInfo ? "Update" :"Create"}</button>
+      <button className='form__btn'>{updateInfo ? "Update" :" ➕ Create"}</button>
 
     </form>
 
