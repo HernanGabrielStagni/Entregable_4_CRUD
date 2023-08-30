@@ -1,6 +1,8 @@
 .user {  /*contenedor de las cards*/
     border: 0.05em solid rgba(8, 8, 8, 0.989);
-   
+    display: flex;
+    flex-direction: column;  
+    position: relative; 
     background-color: rgb(163, 159, 159);
     min-width: 250px;
     border-radius: 0.4em;
@@ -9,13 +11,14 @@
     height: 10.5em;
     box-shadow: 2px 2px 2px 2px rgb(107, 100, 100);
 
+
   
 }
 
 
 .user__name{/*nombre y apellido*/
 font-weight: 5000;
-color: #04046a;
+color: #da2d1a;
 text-shadow: 1.5px 1.5px 1.5px rgb(112, 110, 110);
 /* background-color: red; */
 font-size: 1.1rem;
@@ -66,6 +69,13 @@ width: 2.5en;
 aspect-ratio: 1;
 border-radius: .4em;
 transition: transform 200ms ease;
+position: absolute;
+bottom: .5em;
+right: 1em;
+/* background-color: #D93F3F; */
+padding: 5px;
+
+
 }
 
 .user__btn:hover {
@@ -74,22 +84,30 @@ transition: transform 200ms ease;
     filter: brightness(1.1);
 }
 
-
+/* boton delete*/
 .user__delete{
 color: white;
-background-color: #D93F3F;
+background-color: #fc1404;
 cursor: pointer;
+
 box-shadow: 1px 1px 1px 1px #0005;
+position: absolute;
+bottom: 1em;
+right: 5em;
+
+
 }
 
-
+/* boton update*/
 .user__update{
 color: rgba(3, 3, 3, 0.71);
 border: .05em solid currentColor; 
 cursor: pointer;
+border: none;
 box-shadow: 1px 1px 1px 1px #0005;
 }
 
 .user__icon{
-font-size: 1.2rem;    
+font-size: 1.2rem;   
+ 
 }

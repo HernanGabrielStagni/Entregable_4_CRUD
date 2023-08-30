@@ -71,18 +71,18 @@
     .form__item{
     display: flex;
     flex-direction: column;
-    gap: .3em;
+    gap: .1em;
     }
     
     .form__label{
     font-size: .7rem;
-    padding: .6em;
+    padding: 0em;
     }
     
     
     .form__input{
     padding: .3em .8em;
-    font-size: .7rem;
+    font-size: .8rem;
     font-weight: 300;
     }
     
