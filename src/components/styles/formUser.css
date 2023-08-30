@@ -41,6 +41,7 @@
     .form__title{
     font-weight: .7rem;
     font-size: 1.1rem;
+    color:  rgb(47, 13, 128);
     }
     
     .form__exit{
@@ -93,6 +94,8 @@
     border-radius: .5em;
     margin-top: 1em;
     cursor: pointer;
+    width: 7em;
+    align-self: center;
     }
     
     .form__btn:hover{

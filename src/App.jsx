@@ -28,7 +28,7 @@ function App() {
   
       <div className='app'>
       <header className='app__header'>
-          <h1 className='app__title'>User's  Hernan</h1>
+          <h1 className='app__title'>Users</h1>
           <button onClick={handleOpenForm} className='app__btn'>➕ New User</button>
       </header>
         <FormUser // le paso a FormUser las props que va a necesitar dentro de el 
