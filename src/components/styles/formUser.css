@@ -58,12 +58,13 @@
     border-radius: 50%;
     
     
+    
     }
     
     
     
     .form__exit:hover{
-        background-color:crimson;
+        background-color:rgb(243, 28, 20);
         color: white;
         font-weight: 400;
         
@@ -90,17 +91,20 @@
     
     .form__btn{
     padding: .5em 1em;
-    background-color: #5d69d7;
+    color: white;
+    background-color: #363d75;
+  
     border-radius: .5em;
     margin-top: 1em;
     cursor: pointer;
     width: 7em;
     align-self: center;
+    text-shadow: 0px 0px 5px white;
+    box-shadow: 1px 1px 1px 1px rgb(65, 47, 128);
     }
     
     .form__btn:hover{
-    background-color: rgb(47, 13, 128); 
-       
+        background-color: #544e7f;
          transform: scale(1.05);
          color: white;
         }

@@ -17,12 +17,13 @@
 
 
 .user__name{/*nombre y apellido*/
-font-weight: 5000;
-color: #da2d1a;
-text-shadow: 1.5px 1.5px 1.5px rgb(112, 110, 110);
+font-weight: 600;
+color:  rgb(47, 13, 128);
+text-shadow: 1px 1px 2.5px white;
 /* background-color: red; */
 font-size: 1.1rem;
 /* margin-bottom: 1em; */
+
 }
 
 
@@ -45,6 +46,7 @@ font-size: .7rem;
 letter-spacing: 1px;
 color: #f7f3f3;
 text-transform: uppercase;
+text-shadow: 2px 2px 2px rgb(11, 11, 11);
 margin-top: 1em;
 }
 
